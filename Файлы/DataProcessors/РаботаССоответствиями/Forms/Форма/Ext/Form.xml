@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="16">
+			<Font faceName="Arial" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст задания</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="19">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать Соответствие, наполнить его значениями, а затем перебрать коллекцию и вывести значения на экран.
+Ввести в Соответствие значение месяцев январь - июнь и порядковый номер соответствующего месяца (январь - 1, февраль - 2, март - 3 и т.д.) В комментариях к созданию соответствия написать, чем отличается от структуры.
+Следует не только программным кодом создать и заполнить универсальные структуры данных, но и затем написать циклы, которые выводят на экран значения коллекций.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="21"/>
+		</LabelDecoration>
+		<Button name="ЗаполнитьСоответсвиеДаннымиПоУмолчанию" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаполнитьСоответсвиеДаннымиПоУмолчанию</CommandName>
+			<ExtendedTooltip name="ЗаполнитьСоответсвиеДаннымиПоУмолчаниюРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<LabelDecoration name="Декорация3" id="22">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствие в языке программирования 1С чем-то похоже на Структуру, это тоже коллекция пар Ключ и значение. Но в отличие от Структуры, в Соответствие, чтобы получить значение по определенному ключу, нужно обращаться не как к свойству объекта, а через квадратные скобки (как к элементу Массива), и в качестве ключа можно использовать значение любого типа.
+Структура: Структура1.Ключ1
+Соответствие: Соответствие1[«Ключ1»]</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="24"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация4" id="25">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствие в отличии от структуры не упорядочивает элементы при добавлении.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="27"/>
+		</LabelDecoration>
+		<Button name="ПолучитьКоличествоЭлементовСоответствия" id="7">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьКоличествоЭлементовСоответствия</CommandName>
+			<ExtendedTooltip name="ПолучитьКоличествоЭлементовСоответствияРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<Button name="ОчиститьСоответствие" id="5">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОчиститьСоответствие</CommandName>
+			<ExtendedTooltip name="ОчиститьСоответствиеРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<Button name="ПолучитьЗначения" id="9">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьЗначения</CommandName>
+			<ExtendedTooltip name="ПолучитьЗначенияРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<InputField name="Ключ" id="11">
+			<DataPath>Ключ</DataPath>
+			<ContextMenu name="КлючКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="КлючРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<Button name="УдалитьПоКлючу" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.УдалитьПоКлючу</CommandName>
+			<ExtendedTooltip name="УдалитьПоКлючуРасширеннаяПодсказка" id="15"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаССоответствиями</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Ключ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСоответсвиеДаннымиПоУмолчанию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить соответсвие данными по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить соответсвие данными по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСоответсвиеДаннымиПоУмолчанию</Action>
+		</Command>
+		<Command name="ПолучаетКоличествоЭлементовCоответствия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить количество элементов cоответствия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получает количество элементов cоответствия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучаетКоличествоЭлементовCоответствия</Action>
+		</Command>
+		<Command name="ОчиститьСоответствие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить соответствие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить соответствие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьСоответствие</Action>
+		</Command>
+		<Command name="ПолучитьКоличествоЭлементовСоответствия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить количество элементов соответствия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить количество элементов соответствия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКоличествоЭлементовСоответствия</Action>
+		</Command>
+		<Command name="ПолучитьЗначения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить значения (демонстрация работы)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗначения</Action>
+		</Command>
+		<Command name="УдалитьПоКлючу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить по ключу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить по ключу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПоКлючу</Action>
+		</Command>
+	</Commands>
+</Form>

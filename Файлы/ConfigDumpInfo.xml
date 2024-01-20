@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.13">
+	<ConfigVersions>
+		<Metadata name="Catalog.ВременныеПериоды" id="401172cf-7763-462e-bcd9-54a2b3a1c249" configVersion="e3951b2d8b189249a40f6a03f60cb30400000000">
+			<Metadata name="Catalog.ВременныеПериоды.Attribute.НаименованиеПериода" id="73386a94-24b9-4ce0-aef1-4d9bc68a474b"/>
+			<Metadata name="Catalog.ВременныеПериоды.Attribute.Номер" id="739381b8-3f7d-4270-967b-dba8a18544d4"/>
+		</Metadata>
+		<Metadata name="Catalog.Месяцы" id="abc073f9-3dea-47a9-9219-17f03de000d5" configVersion="4c6f885fcc832647a39d4d6612b458ed00000000">
+			<Metadata name="Catalog.Месяцы.Attribute.НаименованиеМесяца" id="17793b1e-4032-4b76-9d7f-524f1b9f0f96"/>
+			<Metadata name="Catalog.Месяцы.Attribute.НомерМесяца" id="ceda10bf-4c3d-49cb-8b0c-bdde654e17af"/>
+		</Metadata>
+		<Metadata name="Configuration.Конфигурация" id="27114097-e31d-4f08-882b-8888f2de6caa" configVersion="0a996e7c958ee44ea0adb75dea08298100000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="b34d4731-2b02-482a-8d69-e4baf67781f3.8" configVersion="9a55bb2ecbb3ba4793bc5eff9a504dd300000000"/>
+		<Metadata name="DataProcessor.Приветствие" id="fc45d451-aafc-4b49-8824-243f7863c774" configVersion="daa81810c3c0fe479203b1878b47403400000000"/>
+		<Metadata name="DataProcessor.Приветствие.Form.Форма" id="09a7f58a-bd6e-4afd-b494-e73fd257ea10" configVersion="a69316ee8c8d55459e383df58d490a2000000000"/>
+		<Metadata name="DataProcessor.Приветствие.Form.Форма.Form" id="09a7f58a-bd6e-4afd-b494-e73fd257ea10.0" configVersion="667ed5ee4c2e3b4b82b730887969c08700000000"/>
+		<Metadata name="DataProcessor.РаботаСДеревомЗначений" id="b5c9dd50-9deb-4e15-afd8-e3f452ecea9d" configVersion="9a3e1fc7ca304a4ba32558fdc169d7c600000000"/>
+		<Metadata name="DataProcessor.РаботаСДеревомЗначений.Form.Форма" id="b2262ddb-9cca-48b3-8812-497b7a0b7861" configVersion="19a8910acd766c4ab7e480d84aa64fd100000000"/>
+		<Metadata name="DataProcessor.РаботаСДеревомЗначений.Form.Форма.Form" id="b2262ddb-9cca-48b3-8812-497b7a0b7861.0" configVersion="7fcca359772d0f408ed9630baa54f9ba00000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивами" id="735d6cab-ea73-46d6-afc0-506fefe660b3" configVersion="d3a157d1a14c4b41a55817513d4c03c600000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивами.Form.Форма" id="0df63f80-2d79-42a4-b36c-f4ffe7420979" configVersion="775bbc3cd828be478e81267d57b2878200000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивами.Form.Форма.Form" id="0df63f80-2d79-42a4-b36c-f4ffe7420979.0" configVersion="a6796c3da5e38a40abb9186f2992619800000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур" id="fe0b1d33-893b-491d-876f-3c1211daa373" configVersion="4a2b13bd6f6a714da53227f664f90ece00000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.Form.Форма" id="47876a93-0aac-418b-8c0f-6f8b62bce5a2" configVersion="c7d260aaa081be4688b4b862985bded100000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.Form.Форма.Form" id="47876a93-0aac-418b-8c0f-6f8b62bce5a2.0" configVersion="b930764a3bbb8944a9e8dd3e4a43431800000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.Form.Форма.Help" id="47876a93-0aac-418b-8c0f-6f8b62bce5a2.1" configVersion="f044eb5a7cc94942a7fbfc84bc44ab5c00000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.Help" id="fe0b1d33-893b-491d-876f-3c1211daa373.1" configVersion="aa88a9d150b32143b99bbca6808333c900000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.ManagerModule" id="fe0b1d33-893b-491d-876f-3c1211daa373.2" configVersion="d2cd8f25a7d88b4ab341db2f4f6a069e00000000"/>
+		<Metadata name="DataProcessor.РаботаСМассивомСтруктур.ObjectModule" id="fe0b1d33-893b-491d-876f-3c1211daa373.0" configVersion="08a785ca94767d47a861e4c2c5388c0300000000"/>
+		<Metadata name="DataProcessor.РаботаССоответствиями" id="9494fa7e-2a0c-4cc7-b64a-7a22fc29757a" configVersion="3b2409c10dd6cd46a631bdb0e73fd2f400000000"/>
+		<Metadata name="DataProcessor.РаботаССоответствиями.Form.Форма" id="9ad7f34e-c2aa-4555-9976-87f5c1caba4d" configVersion="12f342dd13f9d34294ae140d39a8b9a700000000"/>
+		<Metadata name="DataProcessor.РаботаССоответствиями.Form.Форма.Form" id="9ad7f34e-c2aa-4555-9976-87f5c1caba4d.0" configVersion="1d6609888f6e604198ae6e7b37015caa00000000"/>
+		<Metadata name="DataProcessor.РаботаСТаблицейЗначений" id="bc33b83d-aca6-445b-996f-51c98678422f" configVersion="c092032f2dc97149a2f4fee7130ed22600000000"/>
+		<Metadata name="DataProcessor.РаботаСТаблицейЗначений.Form.Форма" id="738e5bee-95e5-4574-bcd5-7a875da57780" configVersion="d93ad7be1a50d94c93a00c8ccfe4cd1d00000000"/>
+		<Metadata name="DataProcessor.РаботаСТаблицейЗначений.Form.Форма.Form" id="738e5bee-95e5-4574-bcd5-7a875da57780.0" configVersion="034cf29615c59c4f8471655177f6db3100000000"/>
+		<Metadata name="DataProcessor.РаботаСоСпискомЗначений" id="c658b864-2817-47ef-b76b-55029b6f9f8b" configVersion="b2dcb1fbfcbb6743bd8fdc0451e9450500000000"/>
+		<Metadata name="DataProcessor.РаботаСоСпискомЗначений.Form.Форма" id="6d38571d-8c0e-4589-badf-4454f1f54d45" configVersion="e28fb054bb0d0f438db8343c5e6835f600000000"/>
+		<Metadata name="DataProcessor.РаботаСоСпискомЗначений.Form.Форма.Form" id="6d38571d-8c0e-4589-badf-4454f1f54d45.0" configVersion="98151ee65c960d418dd734711a057c8f00000000"/>
+		<Metadata name="DataProcessor.РаботаСоСтруктурами" id="273495f0-cbf4-4880-bea0-2fca28f5fd70" configVersion="426c760992f8234ba7b9bb56601e481f00000000"/>
+		<Metadata name="DataProcessor.РаботаСоСтруктурами.Form.Форма" id="046a735f-4fc8-414f-a4ac-052bbc00af8e" configVersion="07afa542d3d0ee428b5430fca975c42500000000"/>
+		<Metadata name="DataProcessor.РаботаСоСтруктурами.Form.Форма.Form" id="046a735f-4fc8-414f-a4ac-052bbc00af8e.0" configVersion="a4882327a76a87419d479cafbd77e9f600000000"/>
+		<Metadata name="Enum.ВремяГода" id="278f97d8-0165-44b3-a56c-3014cba6ca1a" configVersion="521bf21db4b08f449a3ccac632fa862a00000000">
+			<Metadata name="Enum.ВремяГода.EnumValue.Лето" id="5cc10ce0-d4ea-47ea-be23-8476fe193ce9"/>
+			<Metadata name="Enum.ВремяГода.EnumValue.Весна" id="76f1edb7-53a0-4412-ba2d-6d399eba59b1"/>
+			<Metadata name="Enum.ВремяГода.EnumValue.Осень" id="a16fc435-47fe-463b-87df-d9b476f63645"/>
+			<Metadata name="Enum.ВремяГода.EnumValue.Зима" id="cb8509bc-4961-4e08-80ac-edd00281e082"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="14b64072-6434-4d78-8e59-9e91bf9ce2e2" configVersion="98ff820f6d19394eae8275e395e0fc7100000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

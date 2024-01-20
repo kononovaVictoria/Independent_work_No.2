@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="ТекстЗадания" id="27">
+			<Font faceName="Arial" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст задания</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстЗаданияКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ТекстЗаданияРасширеннаяПодсказка" id="29"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация1" id="30">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать "Таблицу значений", наполнить ее значениями, а затем перебрать эту коллекцию и вывести значения на экран. Ввести в таблицу значений в колонку "Месяц" - название месяца, в колонку "Номер месяца" - порядковый номер соответствующего месяца. Следует не только программным кодом создать и заполнить универсальные структуры данных, но и затем написать циклы, которые выводят на экран значения коллекций.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="32"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="60">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Button name="СоздатьТаблицуЗначений" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СоздатьТаблицуЗначений</CommandName>
+					<ExtendedTooltip name="СоздатьТаблицуЗначенийРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="СвернутьТаблицу" id="58">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СвернутьТаблицу</CommandName>
+					<ExtendedTooltip name="СвернутьТаблицуРасширеннаяПодсказка" id="59"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаНаФорме" id="33">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаНаФорме</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаНаФормеКонтекстноеМеню" id="34"/>
+			<AutoCommandBar name="ТаблицаНаФормеКоманднаяПанель" id="35"/>
+			<ExtendedTooltip name="ТаблицаНаФормеРасширеннаяПодсказка" id="36"/>
+			<SearchStringAddition name="ТаблицаНаФормеСтрокаПоиска" id="37">
+				<AdditionSource>
+					<Item>ТаблицаНаФорме</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНаФормеСтрокаПоискаКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ТаблицаНаФормеСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаНаФормеСостояниеПросмотра" id="40">
+				<AdditionSource>
+					<Item>ТаблицаНаФорме</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНаФормеСостояниеПросмотраКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ТаблицаНаФормеСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаНаФормеУправлениеПоиском" id="43">
+				<AdditionSource>
+					<Item>ТаблицаНаФорме</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНаФормеУправлениеПоискомКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ТаблицаНаФормеУправлениеПоискомРасширеннаяПодсказка" id="45"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаНаФормеМесяц" id="46">
+					<DataPath>ТаблицаНаФорме.Месяц</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаНаФормеМесяцКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТаблицаНаФормеМесяцРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТаблицаНаФормеВремяГода" id="49">
+					<DataPath>ТаблицаНаФорме.ВремяГода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаНаФормеВремяГодаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаНаФормеВремяГодаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ТаблицаНаФормеНомерМесяца" id="52">
+					<DataPath>ТаблицаНаФорме.НомерМесяца</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаНаФормеНомерМесяцаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТаблицаНаФормеНомерМесяцаРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ТаблицаНаФормеБюджет" id="62">
+					<DataPath>ТаблицаНаФорме.Бюджет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаНаФормеБюджетКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТаблицаНаФормеБюджетРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа2" id="67">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация3" id="69">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлем колонку "Год" в таблицу. Результат в сообщениях внизу экрана</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="71"/>
+				</LabelDecoration>
+				<Button name="ДобавитьКолонку" id="65">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДобавитьКолонку</CommandName>
+					<ExtendedTooltip name="ДобавитьКолонкуРасширеннаяПодсказка" id="66"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="55">
+			<Font faceName="Arial" height="0" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа со справочником</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="57"/>
+		</LabelDecoration>
+		<Table name="ТаблицаМесяцев" id="3">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаМесяцев</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМесяцевКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ТаблицаМесяцевКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="ТаблицаМесяцевСвернутьТаблицуЗначений" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СвернутьТаблицуЗначений</CommandName>
+						<ExtendedTooltip name="ТаблицаМесяцевСвернутьТаблицуЗначенийРасширеннаяПодсказка" id="26"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМесяцевРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="ТаблицаМесяцевСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>ТаблицаМесяцев</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМесяцевСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ТаблицаМесяцевСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМесяцевСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>ТаблицаМесяцев</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМесяцевСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ТаблицаМесяцевСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМесяцевУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>ТаблицаМесяцев</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМесяцевУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ТаблицаМесяцевУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаМесяцевМесяц" id="16">
+					<DataPath>ТаблицаМесяцев.Месяц</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМесяцевМесяцКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТаблицаМесяцевМесяцРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ТаблицаМесяцевНомерМесяца" id="19">
+					<DataPath>ТаблицаМесяцев.НомерМесяца</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМесяцевНомерМесяцаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТаблицаМесяцевНомерМесяцаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ТаблицаМесяцевВремяГода" id="22">
+					<DataPath>ТаблицаМесяцев.ВремяГода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМесяцевВремяГодаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТаблицаМесяцевВремяГодаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСТаблицейЗначений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаМесяцев" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица месяцев</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Месяц" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Месяцы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерМесяца" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер месяца</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяГода" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время года</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВремяГода</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаНаФорме" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица на форме</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Месяц" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяГода" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время года</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВремяГода</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерМесяца" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер месяца</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Бюджет" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьТаблицуЗначений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать таблицу значений и наполнить ее данными по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать таблицу значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТаблицуЗначений</Action>
+		</Command>
+		<Command name="СвернутьТаблицуЗначений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть таблицу значений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть таблицу значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СвернутьТаблицуЗначений</Action>
+		</Command>
+		<Command name="СвернутьТаблицу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СвернутьТаблицу</Action>
+		</Command>
+		<Command name="ДобавитьКолонку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить колонку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить колонку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКолонку</Action>
+		</Command>
+	</Commands>
+</Form>

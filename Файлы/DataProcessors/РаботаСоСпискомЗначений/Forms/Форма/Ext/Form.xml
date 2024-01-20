@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="39">
+			<Font faceName="Arial" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст задания</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="41"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="42">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать "Список значений", наполнить его значениями, а затем перебрать "список значений" и вывести значения на экран. Загрузить в "Список Значений" значения из массива, заполненного для пункта 1. Выполнить сортировку по значению. 
+Следует не только программным кодом создать и заполнить универсальные структуры данных, но и затем написать циклы, которые выводят на экран значения коллекций.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="44"/>
+		</LabelDecoration>
+		<Button name="ЗаполнитьСписокДаннымиСправочника" id="45">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаполнитьСписокДаннымиСправочника</CommandName>
+			<ExtendedTooltip name="ЗаполнитьСписокДаннымиСправочникаРасширеннаяПодсказка" id="46"/>
+		</Button>
+		<Button name="ЗаполнитьСписокЗначенийДаннымиПоУмолчанию" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаполнитьСписокЗначенийДаннымиПоУмолчанию</CommandName>
+			<ExtendedTooltip name="ЗаполнитьСписокЗначенийДаннымиПоУмолчаниюРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ЗагрузитьМассивВСписокЗначений" id="5">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗагрузитьМассивВСписокЗначений</CommandName>
+			<ExtendedTooltip name="ЗагрузитьМассивВСписокЗначенийРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<Button name="СообщитьКоличествоЭлементовСпискаЗначения" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СообщитьКоличествоЭлементовСпискаЗначения</CommandName>
+			<ExtendedTooltip name="СообщитьКоличествоЭлементовСпискаЗначенияРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<Table name="СписокЗначенийНаФорме" id="12">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СписокЗначенийНаФорме</DataPath>
+			<RowPictureDataPath>СписокЗначенийНаФорме.Picture</RowPictureDataPath>
+			<ContextMenu name="СписокЗначенийНаФормеКонтекстноеМеню" id="13"/>
+			<AutoCommandBar name="СписокЗначенийНаФормеКоманднаяПанель" id="14"/>
+			<ExtendedTooltip name="СписокЗначенийНаФормеРасширеннаяПодсказка" id="15"/>
+			<SearchStringAddition name="СписокЗначенийНаФормеСтрокаПоиска" id="16">
+				<AdditionSource>
+					<Item>СписокЗначенийНаФорме</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийНаФормеСтрокаПоискаКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="СписокЗначенийНаФормеСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокЗначенийНаФормеСостояниеПросмотра" id="19">
+				<AdditionSource>
+					<Item>СписокЗначенийНаФорме</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийНаФормеСостояниеПросмотраКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="СписокЗначенийНаФормеСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокЗначенийНаФормеУправлениеПоиском" id="22">
+				<AdditionSource>
+					<Item>СписокЗначенийНаФорме</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийНаФормеУправлениеПоискомКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="СписокЗначенийНаФормеУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокЗначенийНаФормеЗначение" id="47">
+					<DataPath>СписокЗначенийНаФорме.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЗначенийНаФормеЗначениеКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СписокЗначенийНаФормеЗначениеРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="СписокЗначенийНаФормеПредставление" id="28">
+					<DataPath>СписокЗначенийНаФорме.Presentation</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЗначенийНаФормеПредставлениеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокЗначенийНаФормеПредставлениеРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ВведитеИндекс" id="7">
+			<DataPath>ВведитеИндекс</DataPath>
+			<ContextMenu name="ВведитеИндексКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВведитеИндексРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Button name="ПолучитьЭлементПоИндексу" id="10">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьЭлементПоИндексу</CommandName>
+			<ExtendedTooltip name="ПолучитьЭлементПоИндексуРасширеннаяПодсказка" id="11"/>
+		</Button>
+		<Button name="ВыбратьМесяц" id="34">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВыбратьМесяц</CommandName>
+			<ExtendedTooltip name="ВыбратьМесяцРасширеннаяПодсказка" id="35"/>
+		</Button>
+		<InputField name="Месяц" id="31">
+			<DataPath>Месяц</DataPath>
+			<ContextMenu name="МесяцКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ВыбранныйМесяц" id="50">
+			<DataPath>ВыбранныйМесяц</DataPath>
+			<ContextMenu name="ВыбранныйМесяцКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="ВыбранныйМесяцРасширеннаяПодсказка" id="52"/>
+		</InputField>
+		<InputField name="Представление" id="53">
+			<DataPath>Представление</DataPath>
+			<ContextMenu name="ПредставлениеКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ПредставлениеРасширеннаяПодсказка" id="55"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСоСпискомЗначений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВведитеИндекс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Введите индекс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗначенийНаФорме" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список значений на форме</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="Месяц" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц (элемент справочника)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Месяцы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокНаФорме" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список на форме</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокНаФорме.Picture</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ВыбранныйМесяц" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранный месяц (значение)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Представление" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСписокЗначенийДаннымиПоУмолчанию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список значений данными по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список значений данными по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСписокЗначенийДаннымиПоУмолчанию</Action>
+		</Command>
+		<Command name="СообщитьКоличествоЭлементовСпискаЗначения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить количество элементов списка значения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить количество элементов списка значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СообщитьКоличествоЭлементовСпискаЗначения</Action>
+		</Command>
+		<Command name="ЗагрузитьМассивВСписокЗначений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить массив в список значений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить массив в список значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьМассивВСписокЗначений</Action>
+		</Command>
+		<Command name="ПолучитьЭлементПоИндексу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить элемент по индексу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить элемент по индексу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЭлементПоИндексу</Action>
+		</Command>
+		<Command name="ВыбратьМесяц" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать месяц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать месяц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьМесяц</Action>
+		</Command>
+		<Command name="ЗаполнитьСписокДаннымиСправочника" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список данными справочника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список данными справочника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСписокДаннымиСправочника</Action>
+		</Command>
+	</Commands>
+</Form>
